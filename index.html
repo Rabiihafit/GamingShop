@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Cartes Jeux Digitaux - GamingShop</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="https://www.logo.wine/a/logo/PlayStation/PlayStation-Icon-Logo.wine.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="logo">🎮 GamingShop</h1>
+    <nav>
+      <a href="#categories">Catégories</a>
+      <a href="#featured">Produits</a>
+      <a href="#panier" id="cart-link">Panier <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="banner-text">
+      <h2>
+        <span class="highlight">Cartes PSN, Xbox, Steam...</span><br>
+        Achetez vos codes digitaux <span class="animated">en toute sécurité</span>
+      </h2>
+      <p>Livraison manuelle rapide et fiable par WhatsApp !</p>
+      <p>Par virement ou presentielle, selon la volanté !</p>
+    </div>
+  </section>
+
+  <section id="categories" class="categories">
+    <h3>Catégories</h3>
+    <div class="category-list">
+      <button class="category-btn" onclick="filterCategory('all')">Tous</button>
+      <button class="category-btn" onclick="filterCategory('PlayStation')">PlayStation</button>
+      <button class="category-btn" onclick="filterCategory('Xbox')">Xbox</button>
+      <button class="category-btn" onclick="filterCategory('Steam')">Steam</button>
+      <button class="category-btn" onclick="filterCategory('Netflix')">Netflix</button>
+    </div>
+  </section>
+
+  <section id="featured" class="products">
+    <h3>Produits en vedette</h3>
+    <div class="product-list" id="product-list">
+      <!-- JS: produits injectés ici -->
+    </div>
+  </section>
+
+  <section id="panier" class="cart-modal">
+    <div class="cart-content">
+      <span class="close" onclick="toggleCart()">&times;</span>
+      <h3>Votre panier</h3>
+      <div id="cart-items"></div>
+      <div class="cart-footer">
+        <strong>Total : <span id="cart-total">0</span> Dhs</strong>
+        <button onclick="sendWhatsapp()" id="checkout-btn">Commander sur WhatsApp</button>
+      </div>
+      <p class="info">Livraison manuelle via WhatsApp - paiement sécurisé après contact.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GamingShop - Vente de codes digitaux</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
