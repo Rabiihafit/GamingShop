@@ -110,13 +110,39 @@ const PRODUCTS = [
     id: 14,
     title: "Netflix Compte Premium 1 month",
     desc: "Compte",
-    price: 100,
+    price: 90,
     category: "Netflix",
     img: "https://cdn-icons-png.flaticon.com/512/732/732228.png",
+  },
+  /* Spotify */
+  {
+    id: 15,
+    title: "Spotify Premium 1 month Individual",
+    desc : "Exclusive Account - One Time Payment",
+    price: 55,
+    category: "Spotify",
+    img : "https://banner2.cleanpng.com/20181001/hbz/kisspng-computer-icons-portable-network-graphics-clip-art-the-kentucky-grasshoppers-veenhoop-festival-1713928083285.webp",
+  },
+  {
+    id: 16,
+    title: "Spotify Premium Individual 6 Months",
+    desc: "Exclusive Account - One Time Payment",
+    price: 160,
+    category: "Spotify",
+    img : "https://banner2.cleanpng.com/20181001/hbz/kisspng-computer-icons-portable-network-graphics-clip-art-the-kentucky-grasshoppers-veenhoop-festival-1713928083285.webp",
+  },
+  {
+    id: 17,
+    title: "Spotify Premium Individual 12 Months",
+    desc: "Exclusive Account - One Time Payment",
+    price: 300,
+    category: "Spotify",
+    img: " https://banner2.cleanpng.com/20181001/hbz/kisspng-computer-icons-portable-network-graphics-clip-art-the-kentucky-grasshoppers-veenhoop-festival-1713928083285.webp",
   },
 ];
 
 /* Xbox :  https://upload.wikimedia.org/wikipedia/commons/3/3a/Xbox_app_logo.svg */
+/* Spotify : https://banner2.cleanpng.com/20181001/hbz/kisspng-computer-icons-portable-network-graphics-clip-art-the-kentucky-grasshoppers-veenhoop-festival-1713928083285.webp */
 /* PlayStation :  https://www.logo.wine/a/logo/PlayStation/PlayStation-Icon-Logo.wine.svg */
 /* Netflix : https://cdn-icons-png.flaticon.com/512/732/732228.png */
 /* Microsoft : https://cdn-icons-png.flaticon.com/512/732/732221.png */
@@ -153,7 +179,7 @@ function filterCategory(cat) {
   filteredCategory = cat;
   renderProducts();
   document.querySelectorAll(".category-btn").forEach(btn => btn.classList.remove("active"));
-  let idx = ["all", "PlayStation", "Xbox", "Steam", "Netflix", "Shahid"].indexOf(cat);
+  let idx = ["all", "PlayStation", "Xbox", "Netflix", "Spotify"].indexOf(cat);
   if (idx >= 0) document.querySelectorAll(".category-btn")[idx].classList.add("active");
 }
 window.filterCategory = filterCategory;
