@@ -135,7 +135,7 @@ const PRODUCTS = [
     id: 17,
     title: "Spotify Premium Individual 12 Months",
     desc: "Exclusive Account - One Time Payment",
-    price: 300,
+    price: 250,
     category: "Spotify",
     img: " https://banner2.cleanpng.com/20181001/hbz/kisspng-computer-icons-portable-network-graphics-clip-art-the-kentucky-grasshoppers-veenhoop-festival-1713928083285.webp",
   },
