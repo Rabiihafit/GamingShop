@@ -139,6 +139,32 @@ const PRODUCTS = [
     category: "Spotify",
     img: " https://banner2.cleanpng.com/20181001/hbz/kisspng-computer-icons-portable-network-graphics-clip-art-the-kentucky-grasshoppers-veenhoop-festival-1713928083285.webp",
   },
+      /* Steam */
+    {
+      id: 18,
+      title: "Steam Gift Card 10 USD",
+      desc: "Code Steam - United States.",
+      price: 150,
+      category: "Steam",
+      img: "https://pngate.com/wp-content/uploads/2025/06/steam-Icon-main-logo-symbol-blue-gradient-circle-design-gaming-platform-1.png",
+    },
+    {
+      id: 19,
+      title: "Steam Gift Card 20 USD",
+      desc: "Code Steam - United States.",
+      price: 250,
+      category: "Steam",
+      img: "https://pngate.com/wp-content/uploads/2025/06/steam-Icon-main-logo-symbol-blue-gradient-circle-design-gaming-platform-1.png",
+    },
+    {
+      id: 20,
+      title: "Steam Gift Card 50 USD",
+      desc: "Code Steam - United States.",
+      price: 550,
+      category: "Steam",
+      img: "https://pngate.com/wp-content/uploads/2025/06/steam-Icon-main-logo-symbol-blue-gradient-circle-design-gaming-platform-1.png",
+    },
+];
 ];
 
 /* Xbox :  https://upload.wikimedia.org/wikipedia/commons/3/3a/Xbox_app_logo.svg */
@@ -179,7 +205,7 @@ function filterCategory(cat) {
   filteredCategory = cat;
   renderProducts();
   document.querySelectorAll(".category-btn").forEach(btn => btn.classList.remove("active"));
-  let idx = ["all", "PlayStation", "Xbox", "Netflix", "Spotify"].indexOf(cat);
+  let idx = ["all", "PlayStation", "Xbox", "Netflix", "Steam", "Spotify"].indexOf(cat);
   if (idx >= 0) document.querySelectorAll(".category-btn")[idx].classList.add("active");
 }
 window.filterCategory = filterCategory;
