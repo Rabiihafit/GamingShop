@@ -165,7 +165,6 @@ const PRODUCTS = [
       img: "https://pngate.com/wp-content/uploads/2025/06/steam-Icon-main-logo-symbol-blue-gradient-circle-design-gaming-platform-1.png",
     },
 ];
-];
 
 /* Xbox :  https://upload.wikimedia.org/wikipedia/commons/3/3a/Xbox_app_logo.svg */
 /* Spotify : https://banner2.cleanpng.com/20181001/hbz/kisspng-computer-icons-portable-network-graphics-clip-art-the-kentucky-grasshoppers-veenhoop-festival-1713928083285.webp */
