@@ -117,7 +117,7 @@ const PRODUCTS = [
   /* Spotify */
   {
     id: 15,
-    title: "Spotify Premium 1 month Individual",
+    title: "Spotify Premium 2 month Individual",
     desc : "Exclusive Account - One Time Payment",
     price: 55,
     category: "Spotify",
