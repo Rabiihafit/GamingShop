@@ -12,7 +12,7 @@ const PRODUCTS = [
     id: 2,
     title: "Carte PSN 20€",
     desc: "Code PlayStation Network - France.",
-    price: 235,
+    price: 250,
     category: "PlayStation",
     img: "https://www.logo.wine/a/logo/PlayStation/PlayStation-Icon-Logo.wine.svg",
   },
